@@ -6,6 +6,7 @@ import pageObjects.ecommerce.PortalProductDetailPageObject;
 import pageObjects.ecommerce.PortalProductListPageObject;
 import pageObjects.ecommerce.PortalProductReviewPageObject;
 import pageObjects.ecommerce.PortalSearchPageObject;
+import pageObjects.ecommerce.PortalShoppingCartPageObject;
 import pageObjects.user.UserAddressesPageObject;
 import pageObjects.user.UserChangePasswordPageObject;
 import pageObjects.user.UserCustomerInfoPageObject;
@@ -57,5 +58,9 @@ public class PageGeneratorManager {
 
 	public static PortalSearchPageObject getPortalSearchPage(WebDriver driver) {
 		return new PortalSearchPageObject(driver);
+	}
+
+	public static PortalShoppingCartPageObject getPortalShoppingCartPage(WebDriver driver) {
+		return new PortalShoppingCartPageObject(driver);
 	}
 }

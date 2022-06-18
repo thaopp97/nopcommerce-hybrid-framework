@@ -118,6 +118,14 @@ public class BaseTest {
 		}
 	}
 
+	protected String covertNumberToPrice(float number) {
+		return "$" + String.format("%,.2f", number);
+	}
+
+	protected Float covertPriceToNumber(String price) {
+		return Float.parseFloat(price.replace("$", "").replace(",", ""));
+	}
+
 	public WebDriver getDriver() {
 		return this.driver;
 	}
