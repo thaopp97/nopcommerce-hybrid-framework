@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="resources"/>
+	<classpathentry kind="src" path="testcases"/>
+	<classpathentry kind="src" path="actions"/>
+	<classpathentry kind="src" path="interfaces"/>
+	<classpathentry kind="src" path="testdata"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="libraries/libExtentReportV5/extentreports-5.0.8.jar"/>
+	<classpathentry kind="lib" path="libraries/libExtentReportV5/freemarker-2.3.30.jar"/>
+	<classpathentry kind="lib" path="libraries/libExtentReportV5/gson-2.8.6.jar"/>
+	<classpathentry kind="lib" path="libraries/libExtentReportV5/lombok-1.18.12.jar"/>
+	<classpathentry kind="lib" path="libraries/libExtentReportV5/reactive-streams-1.0.3.jar"/>
+	<classpathentry kind="lib" path="libraries/libExtentReportV5/rxjava-3.0.4.jar"/>
+	<classpathentry kind="lib" path="libraries/libJavaFaker/commons-lang3-3.5.jar"/>
+	<classpathentry kind="lib" path="libraries/libJavaFaker/generex-1.0.2.jar"/>
+	<classpathentry kind="lib" path="libraries/libJavaFaker/javafaker-1.0.1.jar"/>
+	<classpathentry kind="lib" path="libraries/libJavaFaker/snakeyaml-1.23.jar"/>
+	<classpathentry kind="lib" path="libraries/libOwner/hamcrest-all-1.3.jar"/>
+	<classpathentry kind="lib" path="libraries/libOwner/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="libraries/libOwner/junit-4.12.jar"/>
+	<classpathentry kind="lib" path="libraries/libOwner/mockito-core-2.15.0.jar"/>
+	<classpathentry kind="lib" path="libraries/libOwner/owner-1.0.10.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/bcpkix-jdk15on-1.64.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/bcprov-jdk15on-1.64.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/checker-qual-3.8.0.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/commons-codec-1.13.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/commons-compress-1.20.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/commons-io-2.6.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/dec-0.1.2.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/docker-java-3.2.11.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/docker-java-api-3.2.11.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/docker-java-core-3.2.11.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/docker-java-transport-3.2.11.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/docker-java-transport-httpclient5-3.2.11.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/error_prone_annotations-2.5.1.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/failureaccess-1.0.1.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/gson-2.8.8.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/guava-30.1.1-jre.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/httpclient5-5.0.3.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/httpcore5-5.0.2.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/j2objc-annotations-1.3.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/jackson-annotations-2.10.3.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/jackson-core-2.10.3.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/jackson-databind-2.10.3.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/jcl-over-slf4j-1.7.30.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/jna-5.8.0.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/jsoup-1.14.2.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/jsr305-3.0.2.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/slf4j-api-1.7.32.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/webdrivermanager-5.0.2.jar"/>
+	<classpathentry kind="lib" path="libraries/seleniumTestNG/selenium-server-standalone-3.141.59.jar"/>
+	<classpathentry kind="lib" path="libraries/seleniumTestNG/testng-6.14.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

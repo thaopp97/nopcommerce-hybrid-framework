@@ -1,0 +1,36 @@
+package reportConfig;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.TimeZone;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
+import com.aventstack.extentreports.reporter.configuration.Theme;
+
+import commons.GlobalConstants;
+
+public class ExtentManager {
+	public static final ExtentReports extentReports = new ExtentReports();
+
+	public synchronized static ExtentReports createExtentReports() {
+		ExtentSparkReporter reporter = new ExtentSparkReporter(GlobalConstants.PROJECT_PATH + "/extentReport/ExtentReport_" + getCurrentTime() + ".html");
+		reporter.config().setReportName("NopCommerce HTML Report");
+		reporter.config().setDocumentTitle("NopCommerce HTML Report");
+		reporter.config().setTimelineEnabled(true);
+		reporter.config().setEncoding("utf-8");
+		reporter.config().setTheme(Theme.DARK);
+
+		extentReports.attachReporter(reporter);
+		extentReports.setSystemInfo("Project", "NopCommerce");
+		extentReports.setSystemInfo("JDK version", GlobalConstants.JAVA_VERSION);
+		extentReports.setSystemInfo("Operating System", GlobalConstants.OS_NAME);
+		return extentReports;
+	}
+
+	public static String getCurrentTime() {
+		SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyyMMdd_kk-mm-ss");
+		simpleDateFormat.setTimeZone(TimeZone.getTimeZone("GMT+7"));
+		return simpleDateFormat.format(new Date());
+	}
+}
