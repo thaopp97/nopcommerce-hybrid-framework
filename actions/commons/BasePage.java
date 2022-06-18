@@ -18,6 +18,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObjects.user.UserHomePageObject;
+
 public class BasePage {
 	protected static BasePage getBasePageObject() {
 		return new BasePage();
@@ -521,6 +523,32 @@ public class BasePage {
 		return getAttributeValue(driver, BasePageUI.DYNAMIC_TEXTBOX_BY_ID, "value", idLocator);
 	}
 
+	public void enterToTextareaByID(WebDriver driver, String idLocator, String valueText) {
+		waitForElementVisible(driver, BasePageUI.DYNAMIC_TEXTAREA_BY_ID, idLocator);
+		sendkeyToElement(driver, BasePageUI.DYNAMIC_TEXTAREA_BY_ID, valueText, idLocator);
+	}
+
+	public void selectItemInDropdownByID(WebDriver driver, String idLocator, String itemValue) {
+		waitForElementVisible(driver, BasePageUI.DYNAMIC_DROPDOWN_BY_ID, idLocator);
+		selectItemInDefaultDropdown(driver, BasePageUI.DYNAMIC_DROPDOWN_BY_ID, itemValue, idLocator);
+	}
+
+	public String getSelectedItemInDropdownByID(WebDriver driver, String idLocator) {
+		waitForElementVisible(driver, BasePageUI.DYNAMIC_DROPDOWN_BY_ID, idLocator);
+		return getSelectedItemInDropdown(driver, BasePageUI.DYNAMIC_DROPDOWN_BY_ID, idLocator);
+	}
+
+	public String getPageTitleByH1(WebDriver driver) {
+		waitForElementVisible(driver, BasePageUI.DYNAMIC_HEADING1);
+		return getElementText(driver, BasePageUI.DYNAMIC_HEADING1);
+
+	}
+
+	public UserHomePageObject openUserHomePage(WebDriver driver) {
+		openPageUrl(driver, GlobalConstants.PORTAL_PAGE_URL);
+		return PageGeneratorManager.getUserHomePage(driver);
+	}
+
 	public BasePage clickToHeaderLink(WebDriver driver, String className) {
 		waitForElementClickable(driver, BasePageUI.DYNAMIC_HEADER_LINK, className);
 		clickToElement(driver, BasePageUI.DYNAMIC_HEADER_LINK, className);
@@ -535,6 +563,17 @@ public class BasePage {
 	public boolean isHeaderLinkByClassDisplayed(WebDriver driver, String className) {
 		waitForElementVisible(driver, BasePageUI.DYNAMIC_HEADER_LINK, className);
 		return isElementDisplayed(driver, BasePageUI.DYNAMIC_HEADER_LINK, className);
+	}
+
+	public BasePage clickToFooterLink(WebDriver driver, String textValue) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_FOOTER_LINK, textValue);
+		clickToElement(driver, BasePageUI.DYNAMIC_FOOTER_LINK, textValue);
+		switch (textValue) {
+		case "Search":
+			return PageGeneratorManager.getPortalSearchPage(driver);
+		default:
+			throw new RuntimeException("Cannot find footer link has text '" + textValue + "'");
+		}
 	}
 
 	private long longtimeout = GlobalConstants.LONG_TIMEOUT;
