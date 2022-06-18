@@ -18,6 +18,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import pageObjects.ecommerce.PortalProductDetailPageObject;
+import pageObjects.ecommerce.PortalProductListPageObject;
 import pageObjects.user.UserHomePageObject;
 
 public class BasePage {
@@ -574,6 +576,48 @@ public class BasePage {
 		default:
 			throw new RuntimeException("Cannot find footer link has text '" + textValue + "'");
 		}
+	}
+
+	public BasePage openPageOnMyAccountSidebarByName(WebDriver driver, String pageName) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_PAGE_SIDEBAR_LINK, pageName);
+		clickToElement(driver, BasePageUI.DYNAMIC_PAGE_SIDEBAR_LINK, pageName);
+		switch (pageName) {
+		case "Addresses":
+			return PageGeneratorManager.getUserAddressesrPage(driver);
+		case "Change password":
+			return PageGeneratorManager.getUserChangePasswordPage(driver);
+		case "My product reviews":
+			return PageGeneratorManager.getUserMyProductReviewsPage(driver);
+		default:
+			throw new RuntimeException("Invalid page name at My Account sidebar area");
+		}
+	}
+
+	public String getTextFromBarNotification(WebDriver driver) {
+		waitForElementVisible(driver, BasePageUI.BAR_NOTIFICATION_SUCCESSFUL_MESSAGE);
+		return getElementText(driver, BasePageUI.BAR_NOTIFICATION_SUCCESSFUL_MESSAGE);
+	}
+
+	public void clickToLinkOnBarNotification(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.LINK_ON_BAR_NOTIFICATION);
+		clickToElement(driver, BasePageUI.LINK_ON_BAR_NOTIFICATION);
+	}
+
+	public void closeBarNotification(WebDriver driver) {
+		waitForElementClickable(driver, BasePageUI.CLOSE_ICON_ON_BAR_NOTIFICATION);
+		clickToElement(driver, BasePageUI.CLOSE_ICON_ON_BAR_NOTIFICATION);
+		waitForElementUndisplayed(driver, BasePageUI.BAR_NOTIFICATION_SUCCESSFUL_MESSAGE);
+	}
+
+	public PortalProductListPageObject clickToTopMenuLink(WebDriver driver, String categoryName) {
+		clickToElementByJS(driver, BasePageUI.DYNAMIC_TOP_MENU_LINK, categoryName);
+		return PageGeneratorManager.getPortalProductListPage(driver);
+	}
+
+	public PortalProductDetailPageObject clickToProductByName(WebDriver driver, String productName) {
+		waitForElementClickable(driver, BasePageUI.DYNAMIC_PRODUCT_LINK_BY_NAME, productName);
+		clickToElement(driver, BasePageUI.DYNAMIC_PRODUCT_LINK_BY_NAME, productName);
+		return PageGeneratorManager.getPortalProductDetailPage(driver);
 	}
 
 	private long longtimeout = GlobalConstants.LONG_TIMEOUT;

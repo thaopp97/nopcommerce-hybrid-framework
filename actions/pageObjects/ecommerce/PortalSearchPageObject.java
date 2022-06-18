@@ -19,7 +19,6 @@ public class PortalSearchPageObject extends BasePage {
 	public void clickToSearchButton() {
 		waitForElementClickable(driver, PortalSearchPageUI.SEARCH_BUTTON);
 		clickToElement(driver, PortalSearchPageUI.SEARCH_BUTTON);
-
 	}
 
 	public String getWarningMessage() {

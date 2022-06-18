@@ -11,4 +11,8 @@ public class BasePageUI {
 	public static final String DYNAMIC_HEADING1 = "//h1";
 	public static final String DYNAMIC_PRODUCT_LINK_BY_NAME = "//h2[@class='product-title']//a[contains(text(),'%s')]";
 
+	public static final String BAR_NOTIFICATION_SUCCESSFUL_MESSAGE = "//div[@class='bar-notification success']/p";
+	public static final String LINK_ON_BAR_NOTIFICATION = "//div[@class='bar-notification success']//a";
+	public static final String CLOSE_ICON_ON_BAR_NOTIFICATION = "//div[@class='bar-notification success']/span";
+
 }
