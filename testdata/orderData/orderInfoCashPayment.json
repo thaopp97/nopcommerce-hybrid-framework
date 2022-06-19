@@ -1,0 +1,32 @@
+{
+	"BillingAddress": {
+		"firstname": "Yancey",
+		"lastname": "Crop",
+		"email": "Crop.Y@ttt.com",
+		"company": "Company",
+		"country": "Viet Nam",
+		"state": "Other",
+		"city": "Da nang",
+		"address1": "1 Le Lai",
+		"address2": "2 Le Loi",
+		"zipcode": "39503",
+		"phone": "01234567891",
+		"fax": "123123"
+	},
+	"ShippingAddress": {
+		"firstname": "Jacques",
+		"lastname": "Louch",
+		"email": "jlouch0@ucoz.ru",
+		"company": "",
+		"country": "Brazil",
+		"state": "Other",
+		"city": "Sao Paulo",
+		"address1": "123 Check",
+		"address2": "",
+		"zipcode": "39503",
+		"phone": "01234567891",
+		"fax": ""
+	},
+	"shippingMethod": "Ground",
+	"paymentMethod": "Check / Money Order"
+}

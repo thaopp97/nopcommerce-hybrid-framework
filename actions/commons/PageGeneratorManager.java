@@ -2,11 +2,16 @@ package commons;
 
 import org.openqa.selenium.WebDriver;
 
+import pageObjects.ecommerce.PortalCheckoutPageObject;
+import pageObjects.ecommerce.PortalComparePageObject;
 import pageObjects.ecommerce.PortalProductDetailPageObject;
 import pageObjects.ecommerce.PortalProductListPageObject;
 import pageObjects.ecommerce.PortalProductReviewPageObject;
+import pageObjects.ecommerce.PortalRecentlyViewedProductsPageObject;
 import pageObjects.ecommerce.PortalSearchPageObject;
 import pageObjects.ecommerce.PortalShoppingCartPageObject;
+import pageObjects.ecommerce.PortalWishlistPageObject;
+import pageObjects.ecommerce.UserOrdersPageObject;
 import pageObjects.user.UserAddressesPageObject;
 import pageObjects.user.UserChangePasswordPageObject;
 import pageObjects.user.UserCustomerInfoPageObject;
@@ -40,6 +45,10 @@ public class PageGeneratorManager {
 		return new UserChangePasswordPageObject(driver);
 	}
 
+	public static UserOrdersPageObject getUserOrdersPage(WebDriver driver) {
+		return new UserOrdersPageObject(driver);
+	}
+
 	public static UserMyProductReviewsPageObject getUserMyProductReviewsPage(WebDriver driver) {
 		return new UserMyProductReviewsPageObject(driver);
 	}
@@ -60,7 +69,23 @@ public class PageGeneratorManager {
 		return new PortalSearchPageObject(driver);
 	}
 
+	public static PortalWishlistPageObject getPortalWishlistPage(WebDriver driver) {
+		return new PortalWishlistPageObject(driver);
+	}
+
 	public static PortalShoppingCartPageObject getPortalShoppingCartPage(WebDriver driver) {
 		return new PortalShoppingCartPageObject(driver);
+	}
+
+	public static PortalComparePageObject getPortalComparePage(WebDriver driver) {
+		return new PortalComparePageObject(driver);
+	}
+
+	public static PortalRecentlyViewedProductsPageObject getPortalRecentlyViewedProductsPage(WebDriver driver) {
+		return new PortalRecentlyViewedProductsPageObject(driver);
+	}
+
+	public static PortalCheckoutPageObject getPortalCheckoutPage(WebDriver driver) {
+		return new PortalCheckoutPageObject(driver);
 	}
 }

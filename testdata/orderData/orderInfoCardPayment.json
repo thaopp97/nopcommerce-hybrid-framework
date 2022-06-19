@@ -1,0 +1,11 @@
+{
+	"shippingMethod": "2nd Day Air",
+	"paymentMethod": "Credit Card",
+	"PaymentInfo": {
+		"cardType" : "Visa",
+		"cardHolder":"Baylen Matherly",
+		"cardNumber":"4188 7516 0354 4408",
+		"expirationDate":"09/2023",
+		"cardCode":"802"
+	}
+}

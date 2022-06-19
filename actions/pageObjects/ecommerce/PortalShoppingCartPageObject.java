@@ -2,9 +2,9 @@ package pageObjects.ecommerce;
 
 import org.openqa.selenium.WebDriver;
 
-import PageUIs.ecommerce.PortalShoppingCartPageUI;
 import commons.BasePage;
 import commons.PageGeneratorManager;
+import pageUIs.ecommerce.PortalShoppingCartPageUI;
 
 public class PortalShoppingCartPageObject extends BasePage {
 

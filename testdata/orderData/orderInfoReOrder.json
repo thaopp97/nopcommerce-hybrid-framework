@@ -1,0 +1,39 @@
+{
+	"BillingAddress": {
+		"firstname": "Silvano",
+		"lastname": "O'Hone",
+		"email": "aivakhin0@miitbeian.gov.cn",
+		"company": "Kamba",
+		"country": "China",
+		"state": "Other",
+		"city": "Beijing",
+		"address1": "1 Wall Street",
+		"address2": "",
+		"zipcode": "34289",
+		"phone": "01161712041",
+		"fax": "6439233492"
+	},
+	"ShippingAddress": {
+		"firstname": "Nona",
+		"lastname": "Hammerman",
+		"email": "nhammermanf@ucoz.com",
+		"company": "Kamba",
+		"country": "United States",
+		"state": "Arizona",
+		"city": "Buckeye",
+		"address1": "5 Carpenter Trail",
+		"address2": "418 Grayhawk Point",
+		"zipcode": "73188",
+		"phone": "03522752821",
+		"fax": "9825787745"
+	},
+	"shippingMethod": "Next Day Air",
+	"paymentMethod": "Credit Card",
+	"PaymentInfo": {
+		"cardType" : "Visa",
+		"cardHolder":"Baylen Matherly",
+		"cardNumber":"4188 7516 0354 4408",
+		"expirationDate":"09/2023",
+		"cardCode":"802"
+	}
+}
