@@ -23,6 +23,7 @@ import pageObjects.ecommerce.PortalProductListPageObject;
 import pageObjects.user.UserHomePageObject;
 
 public class BasePage {
+
 	protected static BasePage getBasePageObject() {
 		return new BasePage();
 	}
@@ -557,6 +558,16 @@ public class BasePage {
 		switch (className) {
 		case "ico-register":
 			return PageGeneratorManager.getUserRegisterPage(driver);
+		case "ico-login":
+			return PageGeneratorManager.getUserLoginPage(driver);
+		case "ico-logout":
+			return PageGeneratorManager.getUserHomePage(driver);
+		case "ico-account":
+			return PageGeneratorManager.getUserCustomerInfoPage(driver);
+		case "ico-wishlist":
+			return PageGeneratorManager.getPortalWishlistPage(driver);
+		case "ico-cart":
+			return PageGeneratorManager.getPortalShoppingCartPage(driver);
 		default:
 			throw new RuntimeException("Cannot find header link has this class Name");
 		}
@@ -573,6 +584,8 @@ public class BasePage {
 		switch (textValue) {
 		case "Search":
 			return PageGeneratorManager.getPortalSearchPage(driver);
+		case "Recently viewed products":
+			return PageGeneratorManager.getPortalRecentlyViewedProductsPage(driver);
 		default:
 			throw new RuntimeException("Cannot find footer link has text '" + textValue + "'");
 		}
@@ -586,6 +599,8 @@ public class BasePage {
 			return PageGeneratorManager.getUserAddressesrPage(driver);
 		case "Change password":
 			return PageGeneratorManager.getUserChangePasswordPage(driver);
+		case "Orders":
+			return PageGeneratorManager.getUserOrdersPage(driver);
 		case "My product reviews":
 			return PageGeneratorManager.getUserMyProductReviewsPage(driver);
 		default:
@@ -618,6 +633,21 @@ public class BasePage {
 		waitForElementClickable(driver, BasePageUI.DYNAMIC_PRODUCT_LINK_BY_NAME, productName);
 		clickToElement(driver, BasePageUI.DYNAMIC_PRODUCT_LINK_BY_NAME, productName);
 		return PageGeneratorManager.getPortalProductDetailPage(driver);
+	}
+
+	public void waitForAjaxIconInvisibleAtAdminPage(WebDriver driver) {
+		waitForElementInvisible(driver, BasePageUI.ADMIN_PAGE_AJAX_ICON);
+	}
+
+	public String getTextFromAlertSuccessBarAtAdminPage(WebDriver driver) {
+		waitForElementVisible(driver, BasePageUI.ADMIN_ALERT_SUCCESS_BAR);
+		return getElementText(driver, BasePageUI.ADMIN_ALERT_SUCCESS_BAR);
+	}
+
+	public void openPageByLinkTextAtAdminPage(WebDriver driver, String href) {
+		String url = getAttributeValue(driver, BasePageUI.ADMIN_PAGE_MENU_LINK, "href", href);
+		openPageUrl(driver, url);
+		waitForAjaxIconInvisibleAtAdminPage(driver);
 	}
 
 	private long longtimeout = GlobalConstants.LONG_TIMEOUT;

@@ -16,7 +16,6 @@
 	<classpathentry kind="lib" path="libraries/libExtentReportV5/lombok-1.18.12.jar"/>
 	<classpathentry kind="lib" path="libraries/libExtentReportV5/reactive-streams-1.0.3.jar"/>
 	<classpathentry kind="lib" path="libraries/libExtentReportV5/rxjava-3.0.4.jar"/>
-	<classpathentry kind="lib" path="libraries/libJavaFaker/commons-lang3-3.5.jar"/>
 	<classpathentry kind="lib" path="libraries/libJavaFaker/generex-1.0.2.jar"/>
 	<classpathentry kind="lib" path="libraries/libJavaFaker/javafaker-1.0.1.jar"/>
 	<classpathentry kind="lib" path="libraries/libJavaFaker/snakeyaml-1.23.jar"/>
@@ -56,5 +55,8 @@
 	<classpathentry kind="lib" path="libraries/libWebDriverManager/webdrivermanager-5.0.2.jar"/>
 	<classpathentry kind="lib" path="libraries/seleniumTestNG/selenium-server-standalone-3.141.59.jar"/>
 	<classpathentry kind="lib" path="libraries/seleniumTestNG/testng-6.14.3.jar"/>
+	<classpathentry kind="lib" path="libraries/libOwner/commons-codec-1.11.jar"/>
+	<classpathentry kind="lib" path="libraries/libJavaFaker/commons-lang3-3.5.jar"/>
+	<classpathentry kind="lib" path="libraries/libWebDriverManager/commons-lang-2.6.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

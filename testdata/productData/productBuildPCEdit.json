@@ -1,0 +1,10 @@
+{
+	"productName":"Build your own computer",
+	"processor": "2.5 GHz Intel Pentium Dual-Core E2200 [+$15.00]",
+	"ram": "2 GB",
+	"hdd": "320 GB",
+	"os": "Vista Home [+$50.00]",
+	"software": ["Acrobat Reader [+$10.00]"],
+	"quantity": 1,
+	"price": "$1,275.00"
+}

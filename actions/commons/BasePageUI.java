@@ -15,4 +15,7 @@ public class BasePageUI {
 	public static final String LINK_ON_BAR_NOTIFICATION = "//div[@class='bar-notification success']//a";
 	public static final String CLOSE_ICON_ON_BAR_NOTIFICATION = "//div[@class='bar-notification success']/span";
 
+	public static final String ADMIN_PAGE_AJAX_ICON = "//div[@id='ajaxBusy']";
+	public static final String ADMIN_ALERT_SUCCESS_BAR = "//div[contains(@class,'alert-success')]";
+	public static final String ADMIN_PAGE_MENU_LINK = "//a[contains(@href,'%s')]";
 }

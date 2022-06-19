@@ -1,0 +1,8 @@
+{
+	"gender": "female",
+	"dateOfBirth": "5/27/1995",
+	"roles":["Registered"],
+	"vendorId": "Not a vendor",
+	"activeStatus": true,
+	"adminComment": "New Customer"
+}

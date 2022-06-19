@@ -1,0 +1,10 @@
+{
+	"productName":"Build your own computer",
+	"processor": "2.2 GHz Intel Pentium Dual-Core E2200",
+	"ram": "8GB [+$60.00]",
+	"hdd": "400 GB [+$100.00]",
+	"os": "Vista Home [+$50.00]",
+	"software": ["Microsoft Office [+$50.00]", "Total Commander [+$5.00]"],
+	"quantity": 3,
+	"price": "$1,465.00"
+}

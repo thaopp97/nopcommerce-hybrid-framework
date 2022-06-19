@@ -1,0 +1,12 @@
+{
+	"firstname": "edAbram",
+	"lastname": "edRath",
+	"gender": "male",
+	"dateOfBirth": "10/27/1995",
+	"company": "Likely",
+	"roles":["Guests", "Forum Moderators"],
+	"vendorId": "Not a vendor",
+	"activeStatus": true,
+	"adminComment": "Edit Customer"
+}
+

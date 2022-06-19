@@ -15,4 +15,5 @@ public class GlobalConstants {
 	public static final long SHORT_TIMEOUT = 1;
 	public static final long LONG_TIMEOUT = 15;
 	public static final long RETRY_TEST_TIMES = 3;
+
 }

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="NopCommerce">
+	<listeners>
+		<listener class-name="reportConfig.ExtentReportListener" />
+	</listeners>
+	<test name="Run with Firefox browser - Portal Page">
+		<parameter name="browser" value="h_firefox" />
+		<packages>
+			<package name="com.nopcommerce.commons" />
+			<package name="com.nopcommerce.user" />
+			<package name="com.nopcommerce.ecommerce" />
+		</packages>
+	</test>
+	<test name="Run with Chrome browser - Admin Page">
+		<parameter name="browser" value="h_chrome" />
+		<packages>
+			<package name="com.nopcommerce.admin" />
+		</packages>
+	</test>
+
+</suite>
+
+
+
+
+
+

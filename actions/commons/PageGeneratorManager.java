@@ -2,6 +2,13 @@ package commons;
 
 import org.openqa.selenium.WebDriver;
 
+import pageObjects.admin.AdminCustomerAddressPageObject;
+import pageObjects.admin.AdminCustomerInfoPageObject;
+import pageObjects.admin.AdminCustomerListPageObject;
+import pageObjects.admin.AdminDashboardPageObject;
+import pageObjects.admin.AdminLoginPageObject;
+import pageObjects.admin.AdminProductInfoPageObject;
+import pageObjects.admin.AdminProductListPageObject;
 import pageObjects.ecommerce.PortalCheckoutPageObject;
 import pageObjects.ecommerce.PortalComparePageObject;
 import pageObjects.ecommerce.PortalProductDetailPageObject;
@@ -88,4 +95,33 @@ public class PageGeneratorManager {
 	public static PortalCheckoutPageObject getPortalCheckoutPage(WebDriver driver) {
 		return new PortalCheckoutPageObject(driver);
 	}
+
+	public static AdminLoginPageObject getAdminLoginPage(WebDriver driver) {
+		return new AdminLoginPageObject(driver);
+	}
+
+	public static AdminDashboardPageObject getAdminDashboardPage(WebDriver driver) {
+		return new AdminDashboardPageObject(driver);
+	}
+
+	public static AdminProductListPageObject getAdminProductListPage(WebDriver driver) {
+		return new AdminProductListPageObject(driver);
+	}
+
+	public static AdminProductInfoPageObject getAdminProductInfoPage(WebDriver driver) {
+		return new AdminProductInfoPageObject(driver);
+	}
+
+	public static AdminCustomerListPageObject getAdminCustomerListPage(WebDriver driver) {
+		return new AdminCustomerListPageObject(driver);
+	}
+
+	public static AdminCustomerInfoPageObject getAdminCustomerInfoPage(WebDriver driver) {
+		return new AdminCustomerInfoPageObject(driver);
+	}
+
+	public static AdminCustomerAddressPageObject getAdminCustomerAddressPage(WebDriver driver) {
+		return new AdminCustomerAddressPageObject(driver);
+	}
+
 }
