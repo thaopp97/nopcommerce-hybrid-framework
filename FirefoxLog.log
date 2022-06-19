@@ -1,0 +1,70 @@
+1655612749222	geckodriver	INFO	Listening on 127.0.0.1:24523
+1655612749716	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "window-size=1920x1080" "-no-remote" "-profile" "C:\\Users\\Techsi.vn\\AppData\\Local\\Temp\\rust_mozprofileA8SIft"
+*** You are running in headless mode.
+1655612750070	Marionette	INFO	Marionette enabled
+[GFX1-]: RenderCompositorSWGL failed mapping default framebuffer, no dt
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Techsi.vn\\AppData\\Local\\Temp\\rust_mozprofileA8SIft\\search.json.mozlz4", (void 0)))
+1655612753055	Marionette	INFO	Listening on port 61476
+Read port: 61476
+1655612753301	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://demo.nopcommerce.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a JavaScrispytn error: resource://gre/modules/Locghronous minManagerParent.jsm, essage for:" "https://demo.nloipnce 136: TypeError: gRommeeciperManager is null
+cJea.vaScript error: rescom"
+ource://gre/mconsole.warn: LoginRecipes: "odulesgetRecipes: falling b/Loginack MtanagerPo a synchronous messagareen for:" "https://detm.oj.snmo,p cloimnmee r1ce.com"
+36: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back toJa vaa synchronScript error: resouous messarge for:" "https://demo.nopcommerce.com"
+ce://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: fJaalvlaiSncgr ibpatc ke rtroo ra:  sryenscohurrocneo:u/s/ gmrees/smaogdeu lfeosr/:L"o g"ihntMtapnsa:g/e/rdPeamroe.nnto.pjcsomm,m elricnee 136: Type.Ecrom"
+ror: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: fallingJ abvaacSkc rtipt error:o  raesou rscyen:c/h/rgorneo/umso message for:" "https://demo.nopcommerce.com"
+dules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: faJavlalSing back to a synchronous messagec rfioprt err:o"r :" hrtetsposu:r//demo.nopcommerce.com"ce
+://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous mJaevsasage for:" "Scripthttps://demo.nopcommerce.com"
+ error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronousJavaScript  meserror:s argees ofuorr:" "hctet:p/s/:gre/modules/LoginManagerParent.jsm//d,emo.nopc line 1o3m6m: TeypeError: gRrce.com"
+ecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a syncJhavaScript error: resoruornce://gre/modules/LoginManagerPaorent.jsm, line 136: TypeError: gRecipeManager us mesiss age fonru:" "httpsll
+://demo.nopcommerce.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message foJavaScrir:" pt err"https://demo.nor: resourcopcommerce.com"
+e://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a syncJavahronoScript erus messror: resource://gre/modules/LoginaMgean afgor:e" "https://demo.rnPoaprcommerce.ent.jcom"sm, line 136: TypeError: gRecipeManager is n
+ull
+console.warn: LoginRecipes: "getRecipes: falling back tJoa vaScript error: resource://gre/modules/Loag isnManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+ynchronous message for:" "https://demo.nopcommerce.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://demo.nopcommerce.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://demo.nopcommerce.com"
+JavaScript error: resource://gre/modules/LoginManagerPacroennt.jsm, line 136: TypeError: gRecipeManager is null
+sJavaScript eorle.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://demo.nopcommerce.com"
+ror: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a syncJavharSocnroipt error:us  resomuerce://gre/smodulessage f/LoginManageorParre:" "hnt.jsm, line 136: TypeError: gRecipeMtanager istps://demo. null
+nJopcoavaScriptmmerce .com"
+error: resoconsole.warn: urce://greLoginRe/cipes: "getRemodules/LoginManagerParent.jcipes: fallism, line 136: TypeError: gRecipng beack Mto a sanager is nully
+nchronous message for:" "https://demo.nopcommerce.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "htJavatps://demo.nopcommerce.com"
+Script error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling backJ avaScript error:to a sync hronous resmessage foourcer:" "ht://gre/modultes/LoginMaps://demo.nonagerParent.jsm, line 136: TypeError: gRecipeManager is null
+pcomJavaScript error: resource:merce.com"
+co//gre/nsole.warn: Lomodules/LoginginRecipes: "ManagerParent.jsgetRecipes: falling mb, line 136: aTck to a synchronous message for:" "https://demo.nopcommerce.com"
+ypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a Jasvynchronous messaScriptag ee frorr:o" r":h trestps://demo.nopourccommee:r//gre/mocdulese/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+.Javcaom"
+Scconsroilpet. wearrrno:r :L orgeisource:/nReci/gre/mopes: "getRecipes:dul falling back to ae s/LoginManagerParesnyt.jsnchronousm, lin messagee  1for:"36: TypeE "https:rror: gR//demo.noecippecManager is null
+ommerce.com"
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://demo.nopcommerce.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://demo.nopcommerce.com"
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line console.war136: Tyn: LoginpReeEcrirpes: "getReciopre:s :g fallingR ebcaicpk to a synchronous message for:" "https://demo.nopcommerce.com"
+eManager is null
+JavaScript error: resource://gre/modules/LoginManagerParent.jsm, line 136: TypeError: gRecipeManager is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous mesJavaScsage for:ript"  e"rhror: resource://gre/modulettpss/Lo://gdinManagerParent.jsemo.nopcomm,mer line 136ce.com": T
+ypeError: gRecipeManagerconso le.wais null
+rn: LoginReciJavaScript error: resource:pes: "getRecipes: falling back to a /synchronou/sg mesre/modules/LoginManagerParent.jsm, line 136: TypeError: gsRaecipegMea for:" "https://denagermo.nopcommerce.c is null
+Jaom"
+vacoScripnsole.wat error: resource://gre/modules/LoginManagerParent.jsm, rline 136: TypeError: gRecn: LoginRecipes: "getRecipes: fipeManaalling back toger is null
+ a synchronous message for:" "https://demo.nopcommerce.com"
+1655612782324	Marionette	INFO	Stopped listening on port 61476
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+

@@ -51,7 +51,7 @@ public class PortalProductDetailPageObject extends BasePage {
 	}
 
 	public String getPriceValue() {
-		sleepInSecond(3);
+		sleepInSecond(4);
 		return getElementText(driver, PortalProductDetailPageUI.PRICE_VALUE);
 	}
 
